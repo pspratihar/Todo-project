@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="icon" type="image/png"  href="{% static 'todo/logo1.png' %}">
-    <title>Todo Woo</title>
+    <title>Todo </title>
 </head>
 <body>
 
@@ -49,6 +49,10 @@
                         <button id="signOutBtn" type="submit">Logout</button>
                     </form>
                 </li>
+                <li class="nav-item {{ user }}">
+                    <a class="nav-link" href="#">{{ user }}</a>
+                </li>
+
             {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'signupuser' %}">Sign Up</a>
@@ -58,6 +62,7 @@
                 </li>
             {% endif %}
         </ul>
+
     </div>
 </div>
 </nav>
