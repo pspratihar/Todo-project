@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'mytodopythonwebapp'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1ef2b9cd153c4dd692b04032392dcc77 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_274b2eee4d244e5a8fc1e85ed041ce78 }}
